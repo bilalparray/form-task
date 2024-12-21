@@ -28,8 +28,17 @@ This project, implemented by **Bilal Ahmad Parray**, was developed as part of a 
 ## Setup
 
 1. Clone or download the project files.
+
+```
+https://github.com/bilalparray/form-task.git
+```
+
 2. Open `index.html` in your browser.
-3. Interact with the form to test its features.
+3. Interact with the form to test its features on deploayed link below.
+
+```
+https://bilalparray.github.io/form-task/
+```
 
 ## Conclusion
 
