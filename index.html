@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Multi-Step Form for Apexure Techniqal Round</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+            <div class="progress-step progress-step-active" data-title="Step 1"></div>
+            <div class="progress-step" data-title="Step 2"></div>
+            <div class="progress-step" data-title="Step 3"></div>
+        </div>
+        <form id="multiStepForm">
+            <div class="step" id="step1">
+                <h2>Step 1: Personal Information</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required pattern="[A-Za-z ]+">
+                <div class="validation-message">Please enter your name.</div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <div class="validation-message">Please enter a valid email address.</div>
+                <button type="button" class="next">Next</button>
+            </div>
+            <div class="step" id="step2">
+                <h2>Step 2: Select Category</h2>
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">Select...</option>
+                    <option value="tech">Tech</option>
+                    <option value="health">Health</option>
+                    <option value="education">Education</option>
+                </select>
+                <div class="validation-message">Please select a category.</div>
+                <div id="additionalFields"></div>
+                <button type="button" class="prev">Previous</button>
+                <button type="button" class="next">Next</button>
+            </div>
+            <div class="step" id="step3">
+                <h2>Step 3: Confirmation</h2>
+                <div id="summary"></div>
+                <button type="button" class="prev">Previous</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
